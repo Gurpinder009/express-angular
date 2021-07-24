@@ -1,0 +1,12 @@
+.aboutContainer{
+    margin:5vh 10vw;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:1000px){
+    .aboutContainer{
+        margin: 1vh 5vw;
+    }
+    
+}

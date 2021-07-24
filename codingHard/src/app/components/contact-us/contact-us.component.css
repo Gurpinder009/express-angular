@@ -1,0 +1,12 @@
+.contactUsContainer{
+    margin:0 15vw;
+    margin-bottom:5vh ;
+}
+
+@media screen and (max-width:1000px){
+    .contactUsContainer{
+        margin:2vh 5vw;
+        margin-bottom: 5vh;
+    }
+        
+ }

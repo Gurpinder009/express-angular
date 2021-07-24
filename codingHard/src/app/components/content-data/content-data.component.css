@@ -1,0 +1,25 @@
+.gridContainer{
+    display:grid;
+    gap:1vw;
+    grid-template-columns: 21vw auto 18vw;
+    
+}
+
+.column2{
+    min-width:55vw;
+}
+
+@media screen and (max-width:1000px){
+    .column2{
+        min-width:100%;
+        margin:0vh auto;
+    }   
+    .column1,.column3{
+        display: none;
+    }
+    .gridContainer{
+        padding:2vw;
+        margin:0;
+        grid-template-columns: 100%;
+    }
+}

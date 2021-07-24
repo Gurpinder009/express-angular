@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ContentDataComponent } from './components/content-data/content-data.component';
 import { ContentComponent } from './components/content/content.component';
 import { HomeComponent } from './components/home/home.component';
 
@@ -10,7 +11,7 @@ const routes: Routes = [
   { path: 'content', component: ContentComponent },
   { path: 'contactUs', component: ContactUsComponent },
   { path: 'about', component: AboutComponent },
-  
+  { path: 'content/:slug', component: ContentDataComponent }
   
 ];
 
@@ -19,4 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents =[HomeComponent,ContentComponent,ContactUsComponent,AboutComponent]
+export const routingComponents =[HomeComponent,ContentComponent,ContactUsComponent,AboutComponent,ContentDataComponent ]

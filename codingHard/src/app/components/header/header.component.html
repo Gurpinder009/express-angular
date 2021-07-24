@@ -1,17 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-    <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
+
+<nav class="navbar shadow-sm  fixed fixed-top border-bottom  border-primary  custom-bg shadow-lg navbar-expand-lg p-2  navbar-dark bg-dark">
+    <div class="container-fluid">
+        
+        <a class="navbar-brand text-primary  " routerLink="/"><h2 class="display-7 d-inline">G</h2>SG009</a>
+        <button class="navbar-toggler rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" routerLink = '/content'>Content</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" routerLink ='/contactUs'>Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" routerLink="/about">About</a></li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/content">Content</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contactUs">ContactUs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about">About</a>
+                </li>
+
+
             </ul>
+                <form class="d-flex my-1">
+                    <input class="form-control inputBox custom-theme-border text-white me-3 px-3 rounded" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary  btn-lg  rounded" type="submit">Search</button>
+                </form>
         </div>
     </div>
 </nav>

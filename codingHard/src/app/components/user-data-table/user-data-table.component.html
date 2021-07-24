@@ -1,0 +1,26 @@
+<div>
+
+    <h1 class="display-6 mt-5 text-center">USER INFORMATION TABLE </h1>
+    <table class="table table-dark table-striped text-center table-bordered table-hover">
+
+
+        <th>Index</th>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>User Phone Number </th>
+        <th>User Password</th>
+
+
+        <tbody>
+            <tr *ngFor="let i of userGet;index as j">
+                <td class="text-light">{{j}}</td>
+
+                <td class="text-light">{{i.userName}}</td>
+                <td class="text-light">{{i.userEmail}}</td>
+                <td class="text-light">{{i.userPhoneNumber}}</td>
+                <td class="text-light">{{i.userPassword}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

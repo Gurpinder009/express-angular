@@ -1,0 +1,1 @@
+export const userInfoUrl = "http://192.168.2.109:5000/userInfo"
